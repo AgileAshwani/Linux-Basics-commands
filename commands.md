@@ -7,3 +7,9 @@
 7. echo $(ls /)
 8. echo $(date)
 9. echo $((10*10))
+
+
+Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
