@@ -1,6 +1,6 @@
-**echo $SHELL**
+####echo $SHELL
 *To know which shell is installed*
-echo $0
+#echo $0
 cd -
 echo c{a,b,d}
 5. ak=ashwanik81
