@@ -1,5 +1,7 @@
 * echo $SHELL
+
 *To know which shell is installed*
+
 * echo $0
 * cd -
 * echo c{a,b,d}
