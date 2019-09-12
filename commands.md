@@ -1,7 +1,8 @@
-# echo $SHELL
-2. echo $0
-3. cd -
-4. echo c{a,b,d}
+**echo $SHELL**
+*To know which shell is installed*
+echo $0
+cd -
+echo c{a,b,d}
 5. ak=ashwanik81
 6. echo $ak
 7. echo $(ls /)
