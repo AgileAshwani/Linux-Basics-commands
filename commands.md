@@ -1,6 +1,4 @@
-* echo $SHELL
-
-*To know which shell is installed*
+1. echo $SHELL *To know which shell is installed*
 
 * echo $0
 * cd -
