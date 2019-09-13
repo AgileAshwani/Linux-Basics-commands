@@ -1,4 +1,4 @@
-[<<Chapter1](chapter1.md)
+[<<Chapter1](commands.md)
 
 ### Basic Shell Scripting
 
