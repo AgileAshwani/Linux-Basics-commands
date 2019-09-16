@@ -20,14 +20,13 @@ There are also some anchors, for example, the `^` sign will match something at t
 * Grep - line filtering `ls -l|grep -E 'j.+s'[match items with letter''j, then any number of characters, then letter 's']` && 
   `grep "^[0-9]"* [begins with atleast one numeric digit]` && `grep -v "^[0-9]"* [shows lines that doesn;t begin with number]` && `grep nfs /etc/rc.conf [will return all lines having nfs string]` && `grep ^nfs /etc/rc.conf [will return all lines begins with nfs string]` && `grep ^[nN] /etc/rc.conf [return anything that starts with lower or upper N]` && `grep -v ^[nN] /etc/rc.conf [-v means inverse]` && `grep -i NFS /etc/rc.conf [ignore case]` &&
   
-* awk - Programmatic filtering and string manipulation `ls -l|awk '{print $1}'[shows only the first coloumn e.g.permission coloumn from listing]` && `ls -l|awk '{print $9,"->",$3}'[shows filename which is coloumn 9 and owner name which is column 3, since coloumn 9 is the last colmn $NF could have been used instead]` && `awk '$1 >2000' invoices.txt [return only entries in colmn 1 greater than 2000]` && `ls -l | awk '{print $1}[prints 1st colmn]` && `ls -l | awk '{print $1,$9}[prints 1st colmn & 9th]` && `ls -l | awk '{print $1,$NF}[prints same as previous $NF-highest numer colmn of output]` && 
+* awk - Programmatic filtering and string manipulation `ls -l|awk '{print $1}'[shows only the first coloumn e.g.permission coloumn from listing]` && `ls -l|awk '{print $9,"->",$3}'[shows filename which is coloumn 9 and owner name which is column 3, since coloumn 9 is the last colmn $NF could have been used instead]` && `awk '$1 >2000' invoices.txt > /bigSpenders.txt [return only entries in colmn 1 greater than 2000]` && `ls -l | awk '{print $1}[prints 1st colmn]` && `ls -l | awk '{print $1,$9}[prints 1st colmn & 9th]` && `ls -l | awk '{print $1,$NF}[prints same as previous $NF-highest numer colmn of output]` && 
 
+**Background Process**
 
+* find / > /allfiles.txt & - will dump all files in root to allfiles.txt...and process will run in background due to use of '&' @end. 'jobs' command will show all background running processed. 'jobs -r 1' will remove mentioned num job.
 
-
-
-
-
+**CHMOD 777 meaning??? :confused:**
 
 
 
