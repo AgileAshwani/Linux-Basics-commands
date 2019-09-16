@@ -2,9 +2,9 @@
 
 ### Basic Shell Scripting
 
-**Regular Expressions**
-*Metacharacters*
-Wildcards
+* **Regular Expressions**
+* *Metacharacters*
+* Wildcards
 
 
 
