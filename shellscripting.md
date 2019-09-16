@@ -19,7 +19,8 @@ There are also some anchors, for example, the `^` sign will match something at t
 
 * Grep - line filtering `ls -l|grep -E 'j.+s'[match items with letter''j, then any number of characters, then letter 's']` && 
   `grep "^[0-9]"* [begins with atleast one numeric digit]` && `grep -v "^[0-9]"* [shows lines that doesn;t begin with number]`
-* awk - Programmatic filtering and string manipulation
+  
+* awk - Programmatic filtering and string manipulation `ls -l|awk '{print $1}'[shows only the first coloumn e.g.permission coloumn from listing]` && `ls -l|awk '{print $9,"->",$3}'[shows filename which is coloumn 9 and owner name which is column 3, since coloumn 9 is the last colmn $NF could have been used instead]` && `awk '$1 >2000' invoices.txt [return only entries in colmn 1 greater than 2000]`.
 
 
 
