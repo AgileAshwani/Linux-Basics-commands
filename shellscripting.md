@@ -15,6 +15,12 @@ In our next regular expression example, in square brackets we've got [chs]at, so
 
 There are also some anchors, for example, the `^` sign will match something at the beginning of a string. `Our next expression has a hat symbol or a caret symbol, C-A-R-E-T, and the word Once. And that means that we're trying to match any lines that begin with the word Once.` Whereas the `$` sign will matches something at the end of a string.
 
+**Filtering and formatting commands**
+
+* Grep - line filtering `ls -l|grep -E 'j.+s'[match items with letter''j, then any number of characters, then letter 's']` && 
+  `grep "^[0-9]"* [begins with atleast one numeric digit]` && `grep -v "^[0-9]"* [shows lines that doesn;t begin with number]`
+* awk - Programmatic filtering and string manipulation
+
 
 
 
