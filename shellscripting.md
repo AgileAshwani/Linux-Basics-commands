@@ -28,6 +28,17 @@ There are also some anchors, for example, the `^` sign will match something at t
 
 **CHMOD 777 meaning??? :confused:**
 
+* There are two parts to the file control mechanism, namely Classes and Permissions. Classes determines who can access the file while the Permissions determines the kind of action the user can do to the file. `There are three Classes – Owner, Group, Others.` In short, `777-everyone has full permissions / 755 - owner has full permission and rest can only read/execute but can't modify'
+```
+0 – no permission
+1 – execute
+2 – write
+3 – write and execute
+4 – read
+5 – read and execute
+6 – read and write
+7 – read, write, and execute
+```
 
 
 
