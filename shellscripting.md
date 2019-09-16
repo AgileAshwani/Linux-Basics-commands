@@ -40,24 +40,19 @@ There are also some anchors, for example, the `^` sign will match something at t
 7 – read, write, and execute
 ```
 
+**Conditions**
 
-
-
-
-
-
-
-
-
-```bash
-# Below line indicates which shell will be used. e.g, sh,csh,bash
-#!/bin/bash
-
-clear
-echo "Name:"
-read name
-mkdir /home/ashwanik81/$name
-touch /home/ashwanik81/$name/$name
-echo "The file $name created"
+```
+if [-f /var/log/msg]
+  then
+    echo "/var/log/msg exists"
+fi
+```
+```
+if["$(whoami)" != 'root']; then
+    echo "not root"
+else
+    echo "root"
+fi
 ```
 
