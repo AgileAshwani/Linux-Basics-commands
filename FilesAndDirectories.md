@@ -16,3 +16,10 @@
   /sbin Admin commands
   /media Removable storage
   ```
+* Find command
+```
+find . -name "filename.txt"
+find / -user xyz
+find / -cmin -5
+find / -ctime -1
+```
