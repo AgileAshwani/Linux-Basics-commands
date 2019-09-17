@@ -9,4 +9,10 @@
   /etc Configuration files
   /lib Shared library files
   /boot Boot files
+  /home User home directories
+  /mnt Temporary file system mounting
+  /usr admin commands
+  /var logs
+  /sbin Admin commands
+  /media Removable storage
   ```
