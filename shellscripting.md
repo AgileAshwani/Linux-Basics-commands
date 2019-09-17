@@ -58,6 +58,30 @@ fi
 
 **Looping**
 
+* For/While/Until
+```
+for file in $(ls);
+do
+  echo Filename: $file
+done
+```
+```
+while true
+do
+clear
+echo
+echo "MENU"
+echo "1 - Continue"
+echo "2 - Quit"
+echo
+echo "Enter Choice:"
+read selection
+echo
+case $selection in
+      2)clear;exit;;
+esac
+done
+```
 
 
 
