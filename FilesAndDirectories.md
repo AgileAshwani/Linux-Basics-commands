@@ -11,7 +11,7 @@
   /boot Boot files
   /home User home directories
   /mnt Temporary file system mounting
-  /usr admin commands
+  /usr admin commands - unix sys resorces
   /var logs
   /sbin Admin commands
   /media Removable storage
