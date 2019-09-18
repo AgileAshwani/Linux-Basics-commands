@@ -12,3 +12,15 @@
 
 `join -j2 rates.txt fruits.txt` - You will use the join command on both the files to display the joined output.
 ![image](https://user-images.githubusercontent.com/36263233/65147761-6e019080-da3c-11e9-88da-52d5835d8372.png)
+
+ `nl a /etc/yum.conf` - You can number the lines of a file using the nl command. Using the a parameter, you can number all lines in a file.
+ `od -t c fruits.txt` - Using the od command, you can view the file in different number formats, namely octal, hexadecimal, or any other. The -t parameter is used to specify the type of output. The c parameter displays the ASCII characters.
+ 
+ `paste rates.txt fruits.txt` - Using the paste command, you can paste the output from multiple files into a vertical format. The -s parameter in the paste command enables you to re-orient the output of the command into a horizontal format rather than a vertical one.
+ 
+ `pr -d /etc/yum.conf` - Using the pr command, you can convert a text file into a more appropriately formatted file with the headers, pagination, and column fills. With the -d parameter, you can add double space between lines.
+ 
+ `cat yum.conf | tr a-z A-Z` - Note that, as specified in the command, all the lower case a to z characters are translated to upper case.
+ 
+ `wc yum.conf` - The wc command helps you to count the lines, words, and characters of a file.
+ 
