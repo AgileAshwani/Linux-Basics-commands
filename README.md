@@ -5,8 +5,8 @@ Taste of Open Source
 
 [Chapter 2 | Shell Scripting](shellscripting.md)  
 
-[Chapter 3 | Samba & NFS](sambaandnfs.md)  
+[Chapter 3 | Samba & NFS](SambaAndNFS.md)  
 
-[Chapter 4 | Process Text Streams](processtextstreams.md) 
+[Chapter 4 | Process Text Streams](ProcessTextStreams.md) 
 
 [Chapter 5 | Files and Directories Structure](FilesAndDirectories.md)     
