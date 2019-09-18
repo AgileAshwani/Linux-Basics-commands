@@ -10,6 +10,31 @@
 
 `yum install mc` - mc utility to browse RPM without extracting them
 
+`top` - `top -d 5`[ -d delay in sec] The top command is similar to the ps command, but it provides a more detailed view of the process. The view is constantly updated. `top -bi -n 5` - You can run the top command in batch mode using the -b parameter. With the help of -n parameter, you can specify the number of processes that will run in batch mode. Furthermore, you can ignore the idle processes using the -i parameter.
+
+`uptime` - To check the uptime of the system, number of logged in users, etc.,
+
+`jobs` - You can also find active jobs by running the jobs command.
+
+` nohup find -size -100K > files.txt ` [This command uses the find command to find files that are less than 100 KB in size and then log the results to files.txt.]- The nohup utility continues to run a program even after the user logs out. 
+
+`ps -aux`- You can also view the processes that are owned by others and are in the user mode. You will need to use three parameters: -a, -u, and -x.
+
+`ps -U root -u root -N` - To list every process except those running as root.
+
+`kill 1 8641` - In your system, the process id for bash may be different. Replace 8641 with the relevant process id.
+```
+Note the use of “1” in the command above. It is one of the operators that you can use to terminate a process. Various ways of terminating a process include:
+1 or SIGHUP hangup or disconnect the process
+2 or SIGINT same as Ctrl+C interrupt
+3 or SIGQUIT to quit the process
+9 or SIGKILL kill the process through a kernel call
+15 or SIGTERM terminate a process 'nicely'. This is the DEFAULT signal.
+```
+`pstree` - To view the process hierarchy. Child Process.
+
+`free -m` - You can also view the current memory usage in megabytes.
+
 `uname` - has several switches....can view arch, kernel etc
 
 `yum list yum-utils` - check if package is installed
