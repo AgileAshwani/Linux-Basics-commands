@@ -9,4 +9,4 @@ Taste of Open Source
 
 [Chapter 4 | Process Text Streams](processtextstreams.md) 
 
-[Chapter 5 | Files and Directories Structure](filesanddirectories.md)     
+[Chapter 5 | Files and Directories Structure](FilesAndDirectories.md)     
