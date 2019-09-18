@@ -32,6 +32,20 @@
 
 `ls | grep a` will list all directories having character 'a' grep 'general regular expression' :yum:
 
+`ls [!Aa]*` -  let us list all files that don't start with an 'a' or an 'A', enter the following command.
+
+`ls D[eo]*` - Notice that the output lists all the files that have names starting with “De” or “Do”.
+
+`find / -user root -name “gnome*”` - you will find files starting with gnome for a user named admin. 
+
+`find / -user root -type f` - To find a specific type of file for a user.
+
+`find /var/spool -mtime +60` - To find files that were modified a number of days ago.
+
+`find -mmin -60 -exec ls -l {} \;` - To find files that were modified in the last one hour and then get the detailed listing
+
+`find -size 1M -exec ls -l {} \;` - To list all the files with size more than 1MB.
+
 `man <some unix command>` Bring up the manual pages for a command. Type `q` to exit
 
 `man ls` will show you what ls does and the possible flags you can pass
@@ -51,6 +65,17 @@
 `mate somefile.txt` creates a new file called somefile.txt if it does not already exist, opens the file if it does already exist.
 
 `whoami` show the active user's name
+
+**Use the tar, cpio, and dd Commands**
+
+`tar -cvjf test.tar.bz *.txt`
+```
+The switches used with the tar command:
+c - to create the archive
+v - to display the verbose output during archive creation
+j - to compress the archive with bzip compression. You can use the ‘z’ switch to use gzip compression
+f - to name the file that is being created
+```
 
 
 # Git Basics
