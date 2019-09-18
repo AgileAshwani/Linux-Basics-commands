@@ -6,6 +6,8 @@
 
 `pwd` present working directory
 
+`service name stop/start/status` - Service status
+
 `echo $(date)` Shows system date
 
 `ls` list current directory contents
