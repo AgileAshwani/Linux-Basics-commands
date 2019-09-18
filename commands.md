@@ -2,6 +2,22 @@
 
 `echo $SHELL` or `echo $0` To know which shell is installed
 
+`yum` Yellowdog updater modified
+
+`yum install/list/update/remove/info httpd` -
+
+`yum deplist httpd` - dependency list
+
+`yum install mc` - mc utility to browse RPM without extracting them
+
+`uname` - has several switches....can view arch, kernel etc
+
+`yum list yum-utils` - check if package is installed
+
+`repoquery --list httpd` - to query content of package. yum-utils should be installed
+
+`rpm -q httpd` - q[details]-
+
 `echo c{a,b,d}` Run and see the magic :innocent:
 
 `pwd` present working directory
