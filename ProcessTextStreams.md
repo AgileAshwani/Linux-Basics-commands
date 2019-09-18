@@ -11,4 +11,4 @@
 `head -n5 /etc/yum.conf /etc/passwd` - The display from multiple files marks the output from each file with a header naming the file.
 
 `join -j2 rates.txt fruits.txt` - You will use the join command on both the files to display the joined output.
-![image](https://user-images.githubusercontent.com/13016162/50814508-f2ddcb80-133f-11e9-9e30-2990a80e6e23.png)
+![image](https://user-images.githubusercontent.com/36263233/65147761-6e019080-da3c-11e9-88da-52d5835d8372.png)
