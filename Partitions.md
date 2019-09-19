@@ -28,5 +28,19 @@ Hard links: It is another directory entry for the source file and carries the sa
 `ln -s testfile testlink` - The -s parameter creates a symbolic link rather than a hard link.\
 `ln testfile testlink` - Let's create a hard link. Enter the following command.\
 
+**Find System Files and Place Files in the Correct Location**
+`which -a yum` - If you want to find out all the locations where a specific command occurs.\
+`type type` - The type command allows you to locate this kind of special commands, such as shell bullitins.\
+`whereis yum` - The output displays the location, the name of the configuration file, and the location of the man pages for the command.\
+`find . -name "yum*"` - There will be instances when you need to find files on your Linux system using their names or path.\
+`find . -type d` - Note that the d signifies directories. d is an argument for the -type parameter. Therefore, the -type parameter allows you to specify that you are searching for the type “directories.”\
+`find -type f -empty` - empty signifies the files with 0 bytes. The -type parameter here allows you to set the search type, which in this case is empty files.\
+`find /etc -user root` - Note that /etc is the name of the directory, which is where you will search for the files. The -user parameter specifies the name of the user, which is root in this case.\
+
+
+
+
+
+
 
 
