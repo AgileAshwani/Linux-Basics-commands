@@ -14,4 +14,7 @@ Logical
 `df .` - To determine the partition for the current working directory.
 `du` - To get the size of each directory.
 `du -h Downloads` - To get the size of the directory in Kilobytes, Megabytes, or Gigabytes.
+`ls -l $(which passwd)` - To view the SUID for the file passwd
+`stat /bin/passwd` - The stat command also displays values like when last accessed, modified, or changed.
+
 
