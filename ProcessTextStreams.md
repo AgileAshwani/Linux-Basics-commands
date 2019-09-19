@@ -23,4 +23,23 @@
  `cat yum.conf | tr a-z A-Z` - Note that, as specified in the command, all the lower case a to z characters are translated to upper case.
  
  `wc yum.conf` - The wc command helps you to count the lines, words, and characters of a file.
- 
+
+**Search Text Files using Regular Expressions**
+`grep -n “old” /etc/yum.conf` - To find the word old in the /etc/yum.conf file. Notice the number 17 at the beginning of the display.
+`grep -c “yum” /etc/yum.conf` - Instead of displaying the lines with the searched text, you can simply count the number of lines in which the searched text appears.
+`grep -c “y*” /etc/yum.conf` - Let’s try to find the number of words that start with y in the yum.conf file.
+`grep -v “yum” /etc/yum.conf` - Let’s try to find the word “yum” in the yum.conf file that does not contain the yum word
+`grep -n “^$” /etc/yum.conf` - To list all the blank lines with their line numbers.
+`ls | egrep "yum” /etc/yum.conf` - In this command, the pipe | acts as OR command. This means that egrep will simply search a specific file, in this case, yum.conf, and list the occurrences that have yum in the name.
+`egrep 'Fedora|yum' /etc/yum.conf` - To find two words simultaneously in a file.
+`fgrep -c ‘yum' /etc/yum.conf` - Egrep and fgrep are equivalent to grep with -E and -F. Fgrep is similar to grep, but it does not process any regular expression meta-characters as being special characters.
+`sed '/^#/ d ' yumtest.conf` [to delete all the commented lines in the yumtest.conf file, enter the following command] - Stream Editor. The sed tool is used for performing automatic non-interactive editing of files. You can use most of the regular expressions with this tool to locate the required text.
+`sed '/^  / d' yumtest.conf` - To delete all the blank lines at the end of the file, enter the following command.
+`sed -e '/^$/ d’  -e ‘s/Fedora/Linux/g'  yumtest.conf` - You can also combine more than one sed commands. To combine more than one sed command, you use the -e switch. Enter the following command to delete all the blank lines and replace Fedora with Linux.
+
+
+
+
+
+
+
