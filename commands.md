@@ -22,6 +22,16 @@
 
 `ps -U root -u root -N` - To list every process except those running as root.
 
+`ps -l` - To display detailed information, including priority of a process. `ps -l -u root` - You can also display the priority specified for a user. 
+
+`nice -n +5 bash` `renice +2 -p 6293` ` ps -l -u root`
+```
+You can run a program with higher or lower priority. For example, for a program with a default priority 0, you can change the priority to either of the following:
+Up to -1 to -19 where -19 is the highest priority
+From 1 to +20 where +20 is the lowest priority
+```
+
+
 `kill 1 8641` - In your system, the process id for bash may be different. Replace 8641 with the relevant process id.
 ```
 Note the use of “1” in the command above. It is one of the operators that you can use to terminate a process. Various ways of terminating a process include:
