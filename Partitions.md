@@ -10,8 +10,8 @@ Logical
 
 **Maintain the Integrity of Filesystems**
 
-`df` - To monitor the free space and disk size in 1K blocks. `df -h` - To monitor the free space and disk size in MBs.
-`df -i` - To display the information on the inodes.
+`df` - To monitor the free space and disk size in 1K blocks. `df -h` - To monitor the free space and disk size in MBs.\
+`df -i` - To display the information on the inodes. \
 `df .` - To determine the partition for the current working directory.
 `du` - To get the size of each directory.
 `du -h Downloads` - To get the size of the directory in Kilobytes, Megabytes, or Gigabytes.
